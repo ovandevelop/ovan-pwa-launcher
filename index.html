@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اَپ لانچر اُوان » نصب سایت به صورت اپلیکیشن</title>
+  <meta name="theme-color" content="#0057B8" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/png" href="/icon-192.png" />
+  <link rel="apple-touch-icon" href="/icon-512.png" />
+  <script src="/pwa-ovan.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Ariral', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      line-height: 1.8;
+      user-select: none;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #0057B8;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+    section {
+      max-width: 700px;
+      width: 100%;
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      color: #0057B8;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-right: 1.2rem;
+    }
+    ul li {
+      margin-bottom: 0.7rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      margin-top: 3rem;
+    }
+    a {
+      color: #0057B8;
+      text-decoration: none;
+    }
+    code {
+      background-color: #eee;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      direction: ltr;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🚀 لانچر اُوان</h1>
+    <p>نصب وب‌سایت‌ ها به صورت اپلیکیشن مستقل با قدرت PWA</p>
+  </header>
+
+  <section>
+    <h2>📲 راهنمای نصب برای کاربران</h2>
+    <ul>
+      <li><strong>Android (Chrome):</strong> پس از ورود به سایت، پیام "افزودن به صفحه اصلی" را انتخاب کنید.</li>
+      <li><strong>iOS (Safari):</strong> دکمه Share را بزنید و گزینه <em>Add to Home Screen</em> را انتخاب نمایید.</li>
+      <li>پس از نصب، وب‌سایت مانند یک اپلیکیشن مستقل با آیکون در دستگاه شما ظاهر میشود.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🧩 راهنمای توسعه ‌دهندگان</h2>
+    <ul>
+      <li>فایل Service Worker در مسیر: <code>/service-worker-ovan.js</code></li>
+      <li>ثبت آن از طریق <code>pwa.js</code> در <code>&lt;head&gt;</code> صفحه با <code>defer</code></li>
+      <li>فایل manifest در: <code>/manifest.json</code> شامل آیکون، رنگ برند، و اطلاعات نصب</li>
+      <li>جهت تغییر مسیر فایل ‌ها، مقادیر در فایل‌ های <code>pwa-ovan.js</code> و <code>service-worker-ovan.js</code> را ب‌روزرسانی کنید.</li>
+    </ul>
+    <p>
+      جهت مشاهده مستندات کامل، به مخزن گیت‌ هاب مراجعه نمایید .
+    </p>
+  </section>
+
+  <footer>
+    توسعه‌ یافته توسط علی رضایی - تیم <strong>اُوان توسعه</strong> <br />
+    <a href="https://github.com/ovandevelop/ovan-pwa-launcher" target="_blank">Github</a>
+  </footer>
+
+</body>
+</html>
